@@ -1,0 +1,17 @@
+{
+"version": 2,
+  "builds": [
+    { "src": "./setup.py", "use": "@vercel/python" }
+
+  ],
+   "headers": [
+    {
+      "source": "/upload",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://new-folder-sargaharrey.vercel.app/upload" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+      ]
+    }
+  ]
+}

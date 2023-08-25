@@ -1,0 +1,216 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* @import '~katex/dist/katex.min.css'; */
+
+*:focus{
+
+  outline: none!important;
+ 
+
+}
+/* .graph-form *:focus{
+ border: 2x solid #ccc!important;
+  outline: 2px solid #ccc!important;
+ 
+} */
+.App{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  background-color: #fff;
+height: 100vh;
+
+}
+
+.light{
+  height: 100%;
+}
+.App.dark {
+  background-color: #111;
+}
+.light .react-math-keyboard-toolbar-container{
+  background-color: rgb(249, 250, 252) !important;
+}
+.light .react-math-keyboard-keyboard-container{
+background-color: #ddd!important;
+}
+.light .react-math-keyboard-key-utility{
+background-color: rgb(249, 250, 252)!important;
+color: #222!important;
+}
+
+
+.dark .react-math-keyboard-toolbar-container{
+  background-color: #444 !important;
+}
+.dark .react-math-keyboard-keyboard-container{
+background-color: #222!important;
+}
+.dark .react-math-keyboard-key-utility{
+background-color: #444!important;
+color: #fff!important;
+}
+.chat .light .react-math-keyboard-input{
+  border: 1px solid rgba(0, 0, 0, 0.6)!important;
+  color: #222;
+}
+
+.chat .dark .react-math-keyboard-input{
+  border: 1px solid #ddd!important;
+    color: #fff;
+}
+.react-math-keyboard-input-container{
+  flex-direction: column;
+}
+.react-math-keyboard-keyboard-container{
+  z-index: 10000000000000000000000000!important;
+  position: relative !important;
+}
+.react-math-keyboard-input{
+  margin-bottom:10px;
+}
+ .light .buttons{
+  color:#222
+}
+.dark .buttons{
+  color:#fff!
+} 
+.react-math-keyboard-input{
+  margin: 0px!important;
+}
+.dark .mq-root-block, .mq-math-mode .mq-root-block{
+
+color: #222;  
+}
+
+.dark .react-math-keyboard-input .mq-root-block{
+  color: #fff;
+}
+
+.dark .buttons-mobile{
+  color: #fff;
+}
+.dark .loading{
+  color: #fff;
+}
+
+.light .loading{
+  color: #222;
+}
+.graph-form  .react-math-keyboard-input .mq-root-block{
+  color: #fff;
+}
+
+@media (min-width: 768px){
+
+.react-math-keyboard-toolbar {
+    min-width: 0px !important;
+}
+
+}
+.react-math-keyboard-select option{
+color: #222!important;
+}
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0px!important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+#root{
+  height:100%!important
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.buttons{
+  display: none;
+}
+select {
+    appearance: none; /* This removes the default dropdown arrow */
+    outline: none; /* Remove default focus outline */
+    width: 100%; /* Width of select box */
+    height: 55px; /* Height of select box */
+    border: 1px solid #ccc; /* Removing default border */
+    border-radius: 3px; /* Rounded corners */
+    background: transparent; /* Light gray background */
+    padding: 0 15px; /* Padding to text inside the select */
+    font-size: 16px; /* Font size */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+input{
+  width: 100%;
+}
+
+/* Adding custom dropdown arrow using pseudo-elements */
+select:after {
+    content: '\25BC'; /* Unicode for a downward triangle */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow doesn't interfere with clicks */
+    color: #666; /* Arrow color */
+}
+
+option{
+  color: #fff!important;
+  background-color: transparent!important;
+}
+
+.loading-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999999999999999999999;  /* make sure it appears above other elements */
+}
+
+.loading-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.react-math-keyboard-input-container{
+  width: 100%!important;
+  margin-right: 0px !important; 
+
+}
+@media (max-width:992px) {
+
+.buttons-mobile{
+position: absolute;
+top: -60px;
+left: 18px;
+background-color: #222;
+
+padding: 10px;
+border-radius: 5px;
+}
+ .light .buttons-mobile{
+color: #fff;
+}
+.dark .buttons-mobile{
+  color:#222
+} 
+}

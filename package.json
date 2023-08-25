@@ -1,0 +1,64 @@
+{
+  "name": "math",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "better-react-mathjax": "^2.0.2",
+    "bootstrap": "^5.3.1",
+    "framer-motion": "^10.15.0",
+    "function-plot": "^1.23.3",
+    "interval-arithmetic": "^1.1.2",
+    "katex": "^0.16.8",
+    "math.js": "^1.1.46",
+    "mathjs": "^11.9.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-math-keyboard": "^1.2.32",
+    "react-mathquill": "^1.0.3",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "react-simple-keyboard": "^3.6.48",
+    "tesseract.js": "^4.1.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
