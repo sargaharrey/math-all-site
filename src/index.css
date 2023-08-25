@@ -193,11 +193,15 @@ option{
 }
 .react-math-keyboard-input-container{
   width: 100%!important;
-  margin-right: 0px !important; 
+  margin-right: 20px !important; 
 
 }
 @media (max-width:992px) {
+.react-math-keyboard-input-container{
+  width: 100%!important;
+  margin-right: 0px !important; 
 
+}
 .buttons-mobile{
 position: absolute;
 top: -60px;
@@ -211,6 +215,6 @@ border-radius: 5px;
 color: #fff;
 }
 .dark .buttons-mobile{
-  color:#222
+  color:#fff
 } 
 }
